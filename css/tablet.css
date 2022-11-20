@@ -76,6 +76,9 @@ h1 {
     border: none;
     border-radius: 0 8px 8px 0;
 }
+.section_recherche form button {
+    display: none;
+}
 .div_filtres {
     display: flex;
     justify-content: space-between;
