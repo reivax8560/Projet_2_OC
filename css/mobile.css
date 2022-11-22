@@ -1,33 +1,27 @@
 @media screen and (max-width: 768px) {
-
-    /*////////////////////////   GENERAL  ///////////////////////*/
+/*////////////////////////      GENERAL     ///////////////////////*/
     * {
         margin: 0;
         padding: 0;
     }
-
     body {
         font-family: 'Raleway', sans-serif;
         color: black;
         font-size: 60px;
-        padding: 0 40px;
         max-width: 768px;
+        padding: 0px;
     }
-
     h1 {
         margin: 20px 50px;
     }
-
     .titre {
         font-size: 90px;
         font-weight: bold;
     }
-
     .bold {
         font-weight: bold;
     }
-
-    /*////////////////////////   HEADER  ///////////////////////*/
+    /*////////////////////////      HEADER      ///////////////////////*/
     .header {
         display: flex;
         flex-direction: column;
@@ -47,9 +41,9 @@
         list-style: none;
     }
     .header a {
+        text-decoration: none;
         display: block;
         padding: 30px;
-        text-decoration: none;
         font-weight: 600;
         margin: 0 150px;
         border-bottom: 2px solid #F2F2F2;
@@ -58,7 +52,7 @@
         color: #0065FC;
         border-bottom: 2px solid #0065FC;
     }
-    /*////////////////////   SECTION RECHERCHE  ////////////////////*/
+    /*////////////////////          SECTION RECHERCHE       ////////////////////*/
     .section_recherche {
         display: flex;
         flex-direction: column;
@@ -66,12 +60,11 @@
     .section_recherche p {
         margin: 30px 50px;
     }
-
     .section_recherche form {
         height: 150px;
-        margin: 50px auto;
-        background-color: aquamarine;
+        margin: 50px;
         border-radius: 50px;
+        width: 100%;
     }
     .div_icone_1 {
         background-color: #F2F2F2;
@@ -84,7 +77,7 @@
     }
     .section_recherche form input[type="search"] {
         height: 100%;
-        width: 900px;
+        width: 70%;
         padding-left: 50px;
         border: 1px solid #F2F2F2;
         font-size: 70px;
@@ -93,12 +86,13 @@
     .section_recherche form input[type="submit"] {
             display: none;
     }
-    .section_recherche form button {
-        height: 100%;
-        width: 160px;
+    #bouton_recherche {
         background-color: #0065FC;
         color: white;
+        height: 150px;
+        width: 150px;
         border-radius: 0 50px 50px 0;
+        border: none;
     }
 
     .div_filtres {
@@ -136,7 +130,7 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
-        margin: 80px 0;
+        margin: 80px 0 80px 50px;
     }
     .div_info div {
         display: flex;
@@ -153,14 +147,12 @@
     .div_info div i {
         margin: auto;
     }
-
-    /*//////////////////   DIV HEBERGEMENT & POPULAIRE  //////////////////*/
+    /*//////////////////    DIV HEBERGEMENT & POPULAIRE     //////////////////*/
     .hebergement_et_populaire {
         display: flex;
         flex-direction: column-reverse;
     }
-
-    /*////////////////////   SECTION HEBERGEMENTS  ////////////////////*/
+    /*////////////////////      SECTION HEBERGEMENTS    ////////////////////*/
     .section_hebergements {
         background-color: white;
         padding: 30px;
@@ -177,7 +169,7 @@
         border-radius: 70px;
         border: 15px solid white;
         filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-        margin: 60px auto;
+        margin: 30px auto;
     }
     .carte_hebergement a {
         display: flex;
@@ -219,12 +211,13 @@
     .afficher_plus {
         display: none;
     }
-    /*////////////////////   ASIDE POPULAIRE  ////////////////////*/
+    /*////////////////////      ASIDE POPULAIRE     ////////////////////*/
     .aside {
         display: flex;
         flex-direction: column;
         background-color: #F2F2F2;
-        padding: 30px;
+        padding: 30px 30px 100px 30px;
+        border-radius: 0px;
     }
     .aside_titre {
         display: flex;
@@ -287,9 +280,9 @@
     .vignette_etoile_grise {
         color: #EFEBEB;
     }
-    /*////////////////////   SECTION ACTIVITES  ////////////////////*/
+    /*////////////////////      SECTION ACTIVITES   ////////////////////*/
     .activites {
-        margin: 50px 0;
+        margin: 50px 0 180px 0;
     }
     .activites h2 {
         margin: 0 0 10px 70px;
@@ -298,7 +291,6 @@
     .div_vignettes_activites {
         display: flex;
         flex-direction: column;
-
     }
     .vignette_activite {
         width: 90%;
@@ -324,7 +316,7 @@
         border-radius: 0 0 50px 50px;
         height: 130px;
     }
-    /*////////////////////   FOOTER  ////////////////////*/
+    /*////////////////////      FOOTER      ////////////////////*/
     .footer {
         background-color: #EFEBEB;
         display: flex;
@@ -335,7 +327,7 @@
         margin: 100px 0 0 40px;
     }
     .div_footer h3 {
-        margin: 50px 0;
+        margin: 40px 0;
     }
     .div_footer ul {
         margin-top: 20px;
@@ -347,7 +339,6 @@
     .div_footer li a {
         text-decoration: none;
         color: black;
+        font-size: 50px;
     }
-
-
 }
