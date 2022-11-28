@@ -12,11 +12,13 @@
         padding: 0px;
     }
     h1 {
-        margin: 20px 50px;
-    }
-    .titre {
+        margin: 50px 50px;
+        font-weight: 900;
         font-size: 90px;
-        font-weight: bold;
+    }
+    h2 {
+        font-weight: 900;
+        font-size: 80px;
     }
     .bold {
         font-weight: bold;
@@ -44,7 +46,7 @@
         text-decoration: none;
         display: block;
         padding: 30px;
-        font-weight: 600;
+        font-weight: 550;
         margin: 0 150px;
         border-bottom: 2px solid #F2F2F2;
     }
@@ -61,40 +63,46 @@
         margin: 30px 50px;
     }
     .section_recherche form {
-        height: 150px;
+        height: 200px;
         margin: 50px;
         border-radius: 50px;
         width: 100%;
     }
-    .div_icone_1 {
+    .div_icone_loc {
         background-color: #F2F2F2;
         height: 100%;
-        width: 160px;
+        width: 15%;
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 50px 0 0 50px;
+        border-radius: 70px 0 0 70px;
+        font-size: 70px;
     }
-    .section_recherche form input[type="search"] {
+    .input_search {
         height: 100%;
-        width: 70%;
+        width: 60%;
         padding-left: 50px;
         border: 1px solid #F2F2F2;
         font-size: 70px;
         font-family: 'raleway';
+        font-weight: 900;
     }
-    .section_recherche form input[type="submit"] {
+    .bouton_recherche span {
             display: none;
     }
-    #bouton_recherche {
+    .bouton_recherche {
         background-color: #0065FC;
         color: white;
-        height: 150px;
-        width: 150px;
-        border-radius: 0 50px 50px 0;
+        height: 100%;
+        width: 15%;
+        border-radius: 0 70px 70px 0;
         border: none;
+        margin-right: 50px;
+        font-size: 15px;
     }
-
+    .bouton_recherche i {
+        display: block;
+    }
     .div_filtres {
         display: flex;
         flex-wrap: wrap;
@@ -102,7 +110,8 @@
         width: 100%;
     }
     .div_filtres p {
-        font-weight: bold;
+        font-weight: 900;
+        font-size: 70px;
         width: 768px;
     }
     .div_filtres button {
@@ -117,7 +126,7 @@
         margin: 30px 0 30px 50px;
         text-align: left;
         font-family: 'raleway';
-        font-size: 50px;
+        font-size: 40px;
     }
     .div_filtres button:visited {
         filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -130,16 +139,17 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
-        margin: 80px 0 80px 50px;
+        margin: 120px auto;
     }
     .div_info div {
         display: flex;
         width: 100px;
         height: 80px;
         border-radius: 50%;
-        border: 1px solid #F2F2F2;
+        border: 5px solid #F2F2F2;
         color: #0065FC;
         align-self: flex-start;
+        margin-left: 50px;
     }
     .div_info p {
         margin: 10px 0 0 40px;
@@ -157,14 +167,15 @@
         background-color: white;
         padding: 30px;
         margin: 60px 0;
+        width: 100%;
     }
-    .grid_cartes {
+    .div_cartes {
         display: flex;
         flex-direction: column;
         margin: 70px 0;
     }
     .carte_hebergement {
-        width: 90%;
+        width: 100%;
         height: 800px;
         border-radius: 70px;
         border: 15px solid white;
@@ -193,31 +204,32 @@
         font-size: 50px;
         margin: 30px 0;
     }
-    .carte_etoiles {
+    .div_etoiles {
         display: flex;
         flex-direction: row;
     }
-    .carte_etoiles_bleues {
+    .div_etoiles_bleues {
         color: #0065FC;
         display: flex;
         flex-direction: row;
     }
-    .carte_etoiles_bleues i {
+    .div_etoiles_bleues i {
         margin: auto;
     }
-    .carte_etoile_grise {
+    .div_etoile_grise {
         color: #EFEBEB;
     }
     .afficher_plus {
         display: none;
     }
     /*////////////////////      ASIDE POPULAIRE     ////////////////////*/
-    .aside {
+    .aside_populaires {
         display: flex;
         flex-direction: column;
         background-color: #F2F2F2;
-        padding: 30px 30px 100px 30px;
+        padding: 30px 30px 150px 30px;
         border-radius: 0px;
+        width: 100%;
     }
     .aside_titre {
         display: flex;
@@ -227,7 +239,6 @@
     }
     .aside_titre i {
         color: #0065FC;
-        font-weight: bolder;
     }
     .div_vignettes {
         display: flex;
@@ -238,7 +249,7 @@
         height: 500px;
         border-radius: 70px;
         border: 15px solid white;
-        margin: 30px auto;
+        margin: 20px auto;
         filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     }
     .vignette_populaire a {

@@ -1,123 +1,156 @@
 /*////////////////////////   GENERAL  ///////////////////////*/
-
 * {
     margin: 0;
     padding: 0;
 }
+
 body {
     font-family: 'Raleway', sans-serif;
     color: black;
     font-size: 15px;
-    display: flex;
-    padding: 0 40px;
+    padding: 0 50px;
+    max-width: 1400px;
 }
-.main_wrapper {
-    margin: 0 auto;
-}
+
 h1 {
-    margin-top: 20px;
+    font-weight: 900;
+    font-size: 22px;
 }
-.titre {
-    font-size: 20px;
-    font-weight: bold;
+
+h2 {
+    font-weight: 900;
+    font-size: 22px;
 }
+
 .bold {
     font-weight: bold;
 }
 
 /*////////////////////////   HEADER  ///////////////////////*/
-
 .header {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
+
 .header img {
-    width: 60px;
-    padding: 30px 0;
+    height: 20px;
+    margin-top: 40px;
 }
+
 .header ul {
     display: flex;
     flex-direction: row;
 }
+
 .header li {
     list-style: none;
 }
+
 .header a {
     display: block;
-    padding: 30px;
+    padding: 50px 30px 0 30px;
     text-decoration: none;
     font-weight: 600;
 }
+
 .header a:hover {
     color: #0065FC;
     border-top: 2px solid;
 }
 
 /*////////////////////   SECTION RECHERCHE  ////////////////////*/
+.section_recherche {
+    margin: 50px 0;
+}
 
 .section_recherche p {
-    margin: 8px 0;
-}
-.section_recherche form {
-    height: 40px;
     margin: 10px 0;
+}
+
+.section_recherche form {
     display: flex;
     flex-direction: row;
+    height: 50px;
+    margin: 20px 0;
     gap: 0px;
 }
-.section_recherche form i {
+
+.div_icone_loc {
     background-color: #F2F2F2;
-    padding: 13px 15px;
-    border-radius: 8px 0 0 8px;
+    border-radius: 15px 0 0 15px;
+    font-size: 18px;
+    width: 22px;
+    padding: 13px;
+    text-align: center;
 }
-.section_recherche form input[type="search"] {
+
+.input_search {
     height: 100%;
-    width: 200px;
+    width: 220px;
     padding-left: 15px;
     border: 1px solid #F2F2F2;
+    font-size: 16px;
+    font-weight: 900;
+    font-family: 'Raleway';
 }
-.section_recherche form input[type="submit"] {
+
+.bouton_recherche {
     height: 100%;
-    width: 100px;
+    width: 120px;
     background-color: #0065FC;
     color: white;
     border: none;
-    border-radius: 0 8px 8px 0;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Raleway';
 }
-.section_recherche form button {
+
+.bouton_recherche i {
     display: none;
 }
+
 .div_filtres {
     display: flex;
-    justify-content: space-between;
-    width: 750px;
-    margin-top: 25px;
+    justify-content: flex-start;
+    margin: 30px 0;
 }
+
 .div_filtres p {
-    font-weight: bold;
+    font-weight: 900;
+    margin: auto 10px;
 }
+
 .div_filtres button {
-    font-weight: bold;
+    font-weight: 900;
     background-color: white;
-    border: 2px solid #F2F2F2;
-    border-radius: 20px;
-    padding: 0 15px;
+    border: 3px solid #F2F2F2;
+    border-radius: 40px;
+    padding: 0 20px;
     cursor: pointer;
+    font-family: 'Raleway';
+    height: 50px;
+    font-size: 16px;
+    margin: 0 15px;
 }
+
 .div_filtres button:hover {
     background-color: #DEEBFF;
 }
+
 .div_filtres button i {
     color: #0065FC;
     margin-right: 10px;
 }
+
 .div_info {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    width: 420px;
     margin: 25px 0;
 }
+
 .div_info div {
     display: flex;
     width: 20px;
@@ -125,157 +158,200 @@ h1 {
     border-radius: 50%;
     border: 1px solid #F2F2F2;
     color: #0065FC;
+    margin: 0 10px;
 }
+
 .div_info div i {
     margin: auto;
 }
 
 /*//////////////////   DIV HEBERGEMENT & POPULAIRE  //////////////////*/
-
 .hebergement_et_populaire {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 /*////////////////////   SECTION HEBERGEMENTS  ////////////////////*/
-
 .section_hebergements {
     background-color: #F2F2F2;
     border-radius: 20px;
     padding: 30px;
-    margin-right: 30px;
-    flex-grow: 2;
+    width: 69%;
+    box-sizing: border-box;
 }
-.grid_cartes {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin: 20px 0;
+
+.section_hebergements h2 {
+    margin-left: 10px;
 }
+
+.div_cartes {
+    margin: 10px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
 .carte_hebergement {
-    width: 220px;
-    height: 180px;
     border-radius: 20px;
     border: 4px solid white;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    width: 27%;
+    margin: 2%;
 }
+
 .carte_hebergement a {
-    display: flex;
-    flex-direction: column;
     text-decoration: none;
     color: black;
+    display: flex;
+    flex-direction: column;
 }
+
 .carte_hebergement a img {
-    width: 100%;
-    height: 110px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
+    width: 100%;
+    height: 110px;
 }
+
 .carte_texte {
     background-color: white;
     padding: 10px 15px;
     border-radius: 0 0 20px 20px;
+    height: 70px;
 }
+
 .carte_texte p {
     font-size: 13px;
     margin: 5px 0;
 }
-.carte_etoiles {
+
+.div_etoiles {
     display: flex;
     flex-direction: row;
+    margin: 5px 0;
 }
-.carte_etoiles_bleues {
+
+.div_etoiles_bleues {
     color: #0065FC;
     display: flex;
     flex-direction: row;
 }
-.carte_etoiles_bleues i {
+
+.div_etoiles_bleues i {
     margin: auto;
 }
-.carte_etoile_grise {
+
+.div_etoile_grise {
     color: #EFEBEB;
 }
 
-/*////////////////////   ASIDE POPULAIRE  ////////////////////*/
+.afficher_plus {
+    margin: 30px 0 0 10px;
+    font-size: 18px;
+    font-weight: 900;
+}
 
-.aside {
+/*////////////////////   ASIDE POPULAIRE  ////////////////////*/
+.aside_populaires {
     background-color: #F2F2F2;
     border-radius: 20px;
     padding: 30px;
-    flex-grow: 1;
+    width: 29%;
+    box-sizing: border-box;
 }
+
 .aside_titre {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
 .aside_titre i {
     color: #0065FC;
 }
+
 .div_vignettes {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
 }
+
 .vignette_populaire {
-    width: 320px;
-    height: 120px;
     border-radius: 20px;
     border: 4px solid white;
-    margin: 20px 0;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    height: 25%;
+    width: 100%;
+    margin: 3%;
 }
+
 .vignette_populaire a {
     display: flex;
     text-decoration: none;
     color: black;
+    height: 100%;
+    width: 100%;
 }
+
 .vignette_populaire a img {
     border-radius: 20px 0 0 20px;
     width: 40%;
-    height: 120px;
+    height: 100%;
+    max-height: 140px;
     object-fit: cover;
 }
+
 .vignette_texte {
     background-color: white;
     padding: 10px 15px;
     border-radius: 0 20px 20px 0;
     width: 60%;
 }
+
 .vignette_texte p {
     font-size: 13px;
     margin: 5px 0;
 }
+
 .vignette_etoiles {
     display: flex;
     flex-direction: row;
     position: absolute;
     bottom: 5px;
 }
+
 .vignette_etoiles_bleues {
     color: #0065FC;
     display: flex;
     flex-direction: row;
 }
+
 .vignette_etoiles_bleues i {
     margin: auto;
 }
+
 .vignette_etoile_grise {
     color: #EFEBEB;
 }
 
 /*////////////////////   SECTION ACTIVITES  ////////////////////*/
-
 .activites {
     margin: 50px auto;
 }
+
 .activites h2 {
     margin-bottom: 30px;
 }
+
 .div_vignettes_activites {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
 .vignette_activite {
     width: 302px;
     height: 445px;
@@ -284,16 +360,19 @@ h1 {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     margin: 0 20px;
 }
+
 .vignette_activite a {
     text-decoration: none;
     color: black;
 }
+
 .vignette_activite a img {
     border-radius: 20px 20px 0 0;
     width: 100%;
     height: 389px;
     object-fit: cover;
 }
+
 .vignette_activite a h4 {
     background-color: white;
     padding: 10px 15px;
@@ -302,31 +381,27 @@ h1 {
 }
 
 /*////////////////////   FOOTER  ////////////////////*/
-
 .footer {
     background-color: #EFEBEB;
     display: flex;
     justify-content: space-between;
     padding: 40px 60px;
 }
+
 .div_footer {
     min-width: 350px;
 }
+
 .div_footer ul {
     margin-top: 20px;
 }
+
 .div_footer li {
     list-style: none;
     margin: 10px 0;
 }
+
 .div_footer li a {
     text-decoration: none;
     color: black;
 }
-
-
-
-
-
-
-
