@@ -10,6 +10,8 @@ body {
     font-size: 15px;
     padding: 0 50px;
     max-width: 1400px;
+/*    min-width: 100%;  */
+    margin: 0 auto;
 }
 
 h1 {
@@ -51,7 +53,7 @@ h2 {
     display: block;
     padding: 50px 30px 0 30px;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .header a:hover {
@@ -61,7 +63,7 @@ h2 {
 
 /*////////////////////   SECTION RECHERCHE  ////////////////////*/
 .section_recherche {
-    margin: 50px 0;
+    margin: 50px 0 25px 0;
 }
 
 .section_recherche p {
@@ -120,6 +122,7 @@ h2 {
 .div_filtres p {
     font-weight: 900;
     margin: auto 10px;
+    font-size: 16px;
 }
 
 .div_filtres button {
@@ -131,7 +134,7 @@ h2 {
     cursor: pointer;
     font-family: 'Raleway';
     height: 50px;
-    font-size: 16px;
+    font-size: 15px;
     margin: 0 15px;
 }
 
@@ -185,11 +188,16 @@ h2 {
     margin-left: 10px;
 }
 
+/* je n'arrive pas à créer de marge verticale entre les cartes hébergements en utilisant gap sur la carte. 
+j'ai tester align-content sur la div des cartes, ça ne marche pas non plus
+il n'y a qu'avec le margin 1% que ça fonctionne mais la marge n'est pas identique à la maquette */
+
 .div_cartes {
     margin: 10px 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+/*    align-content: space-between;     (ne fonctionne pas) */
 }
 
 .carte_hebergement {
@@ -197,6 +205,7 @@ h2 {
     border: 4px solid white;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     width: 27%;
+/*    gap: 5%;  (ne fonctionne pas) */
     margin: 2%;
 }
 
@@ -216,20 +225,19 @@ h2 {
 
 .carte_texte {
     background-color: white;
-    padding: 10px 15px;
-    border-radius: 0 0 20px 20px;
-    height: 70px;
+    padding: 5px 10px;
+    border-radius: 0 0 15px 15px;
+    min-height: 50px;
 }
 
 .carte_texte p {
     font-size: 13px;
-    margin: 5px 0;
+    margin: 3px 0;
 }
 
 .div_etoiles {
     display: flex;
     flex-direction: row;
-    margin: 5px 0;
 }
 
 .div_etoiles_bleues {
@@ -247,8 +255,8 @@ h2 {
 }
 
 .afficher_plus {
-    margin: 30px 0 0 10px;
-    font-size: 18px;
+    margin: 10px 0 10px 10px;
+    font-size: 16px;
     font-weight: 900;
 }
 
@@ -307,7 +315,7 @@ h2 {
 .vignette_texte {
     background-color: white;
     padding: 10px 15px;
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 15px 15px 0;
     width: 60%;
 }
 
@@ -353,12 +361,10 @@ h2 {
 }
 
 .vignette_activite {
-    width: 302px;
-    height: 445px;
     border-radius: 20px;
     border: 2px solid #EFEBEB;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    margin: 0 20px;
+    width: 23%;
 }
 
 .vignette_activite a {
@@ -368,16 +374,16 @@ h2 {
 
 .vignette_activite a img {
     border-radius: 20px 20px 0 0;
-    width: 100%;
-    height: 389px;
     object-fit: cover;
+    width: 100%;
+    height: 350px;
 }
 
 .vignette_activite a h4 {
     background-color: white;
-    padding: 10px 15px;
+    padding: 15px 0 0 15px;   
     border-radius: 0 0 20px 20px;
-    height: 56px;
+    height: 30px;
 }
 
 /*////////////////////   FOOTER  ////////////////////*/
