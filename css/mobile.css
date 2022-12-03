@@ -21,7 +21,7 @@
 
     h2 {
         font-weight: 900;
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .bold {
@@ -148,8 +148,8 @@
         text-align: left;
         font-family: 'raleway';
         margin: 0 15px 15px 0;
-        font-size: 12px;
-        padding: 0;
+        font-size: 11px;
+        padding: 0 5px;
     }
 
     .div_filtres button:visited {
@@ -164,19 +164,19 @@
 
     .div_info {
         display: flex;
-        justify-content: space-between;
-        width: 100%;
+        justify-content: flex-start;
         margin: 30px 0 10px 0;
     }
 
     .div_info div {
         display: flex;
-        width: 25px;
+        width: 30px;
         height: 20px;
         border-radius: 50%;
         border: 2px solid #F2F2F2;
         color: #0065FC;
         align-self: flex-start;
+        margin: 0;
     }
 
     .div_info div i {
@@ -185,7 +185,7 @@
 
     .div_info p {
         font-size: 16px;
-        margin: 3px 10px;
+        margin: 3px 0 3px 8px;
     }
 
     /*//////////////////    DIV HEBERGEMENT & POPULAIRE     //////////////////*/
@@ -194,27 +194,111 @@
         flex-direction: column-reverse;
     }
 
+    /*////////////////////      ASIDE POPULAIRE     ////////////////////*/
+    .aside_populaires {
+        display: flex;
+        flex-direction: column;
+        background-color: #F2F2F2;
+        padding: 30px 20px 40px 20px;
+        border-radius: 0px;
+        width: 100%;
+    }
+
+    .aside_titre {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        align-items: center;
+        width: 100%;
+    }
+
+    .aside_titre i {
+        color: #0065FC;
+    }
+
+    .div_vignettes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .vignette_populaire {
+        width: 100%;
+        height: 140px;
+        border-radius: 20px;
+        border: 5px solid white;
+        margin: 5px auto;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+        box-sizing: border-box;
+    }
+
+    .vignette_populaire a {
+        display: flex;
+        text-decoration: none;
+        color: black;
+        height: 100%;
+    }
+
+    .vignette_populaire a img {
+        border-radius: 15px 0 0 15px;
+        width: 40%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .vignette_texte {
+        background-color: white;
+        padding: 10px 17px;
+        border-radius: 0 15px 15px 0;
+        width: 60%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+    .vignette_texte p {
+        font-size: 13px;
+        margin: 10px 0;
+    }
+
+    .vignette_etoiles {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .vignette_etoiles_bleues {
+        color: #0065FC;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .vignette_etoiles_bleues i {
+        margin: auto;
+    }
+
+    .vignette_etoile_grise {
+        color: #EFEBEB;
+    }
+
+
     /*////////////////////      SECTION HEBERGEMENTS    ////////////////////*/
     .section_hebergements {
         background-color: white;
-        padding: 30px;
-        margin: 60px 0;
+        padding: 30px 20px 40px 20px;
         width: 100%;
     }
 
     .div_cartes {
         display: flex;
         flex-direction: column;
-        margin: 70px 0;
     }
 
     .carte_hebergement {
         width: 100%;
-        height: 800px;
-        border-radius: 70px;
-        border: 15px solid white;
+        height: 200px;
+        border-radius: 20px;
+        border: 5px solid white;
+        margin: 8px auto;
         filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-        margin: 30px auto;
+        box-sizing: border-box;
     }
 
     .carte_hebergement a {
@@ -226,21 +310,23 @@
 
     .carte_hebergement a img {
         width: 100%;
-        height: 450px;
-        border-radius: 50px 50px 0 0;
+        height: 120px;
+        border-radius: 15px 15px 0 0;
         object-fit: cover;
     }
 
     .carte_texte {
         background-color: white;
-        padding: 30px 40px;
-        border-radius: 0 0 50px 50px;
-        height: 300px;
+        padding: 10px 10px;
+        border-radius: 0 0 15px 15px;
+        height: 80px;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .carte_texte p {
-        font-size: 50px;
-        margin: 30px 0;
+        font-size: 14px;
+        margin: 3px 0;
     }
 
     .div_etoiles {
@@ -266,129 +352,56 @@
         display: none;
     }
 
-    /*////////////////////      ASIDE POPULAIRE     ////////////////////*/
-    .aside_populaires {
-        display: flex;
-        flex-direction: column;
-        background-color: #F2F2F2;
-        padding: 30px 30px 150px 30px;
-        border-radius: 0px;
+    /*////////////////////      SECTION ACTIVITES   ////////////////////*/
+    .activites {
+        padding: 50px 20px 60px 20px;
         width: 100%;
-    }
-
-    .aside_titre {
-        display: flex;
-        justify-content: space-between;
-        margin: 60px 50px;
-        align-items: center;
-    }
-
-    .aside_titre i {
-        color: #0065FC;
-    }
-
-    .div_vignettes {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .vignette_populaire {
-        width: 90%;
-        height: 500px;
-        border-radius: 70px;
-        border: 15px solid white;
-        margin: 20px auto;
-        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    }
-
-    .vignette_populaire a {
-        display: flex;
-        text-decoration: none;
-        color: black;
-        height: 100%;
-    }
-
-    .vignette_populaire a img {
-        border-radius: 50px 0 0 50px;
-        width: 40%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .vignette_texte {
-        background-color: white;
-        padding: 50px 50px;
-        border-radius: 0 50px 50px 0;
-        width: 60%;
-        height: 100%;
+        margin: 0;
         box-sizing: border-box;
     }
 
-    .vignette_texte p {
-        font-size: 50px;
-        margin: 30px 0;
-    }
-
-    .vignette_etoiles {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .vignette_etoiles_bleues {
-        color: #0065FC;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .vignette_etoiles_bleues i {
-        margin: auto;
-    }
-
-    .vignette_etoile_grise {
-        color: #EFEBEB;
-    }
-
-    /*////////////////////      SECTION ACTIVITES   ////////////////////*/
-    .activites {
-        margin: 50px 0 180px 0;
-    }
-
     .activites h2 {
-        margin: 0 0 10px 70px;
-        width: 600px;
+        width: 150px;
+        margin: 0;
     }
 
     .div_vignettes_activites {
         display: flex;
         flex-direction: column;
+        box-sizing: border-box;
+        width: 100%;
     }
 
     .vignette_activite {
-        width: 90%;
-        height: 750px;
-        border-radius: 70px;
-        border: 15px solid #EFEBEB;
+        width: 100%;
+        height: 190px;
+        border-radius: 20px;
+        margin: 12px auto;
         filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-        margin: 40px auto;
+        box-sizing: border-box;
     }
 
     .vignette_activite a {
+        display: flex;
+        flex-direction: column;
         text-decoration: none;
         color: black;
     }
 
     .vignette_activite a img {
-        border-radius: 50px 50px 0 0;
+        border-radius: 20px 20px 0 0;
         width: 100%;
-        height: 530px;
+        height: 140px;
         object-fit: cover;
     }
 
     .vignette_activite a h4 {
         background-color: white;
-        padding: 70px 0 0 50px;
-        border-radius: 0 0 50px 50px;
-        height: 130px;
+        padding: 14px 17px;
+        border-radius: 0 0 20px 20px;
+        height: 50px;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     /*////////////////////      FOOTER      ////////////////////*/
@@ -396,29 +409,20 @@
         background-color: #EFEBEB;
         display: flex;
         flex-direction: column;
+        padding: 40px 30px 10px 30px;
     }
 
     .div_footer {
-        min-width: 350px;
-        margin: 100px 0 0 40px;
-    }
-
-    .div_footer h3 {
-        margin: 40px 0;
-    }
-
-    .div_footer ul {
-        margin-top: 20px;
+        margin-bottom: 30px;
     }
 
     .div_footer li {
         list-style: none;
-        margin: 30px 0;
     }
 
     .div_footer li a {
         text-decoration: none;
         color: black;
-        font-size: 50px;
+        font-size: 16px;
     }
 }
