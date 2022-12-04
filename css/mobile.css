@@ -61,11 +61,13 @@
         border-bottom: 2px solid #F2F2F2;
         width: 140px;
         text-align: center;
+        color: black;
     }
 
     .header a:active {
         color: #0065FC;
         border-bottom: 2px solid #0065FC;
+        border-top: none;
     }
 
     /*////////////////////          SECTION RECHERCHE       ////////////////////*/
