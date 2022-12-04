@@ -67,7 +67,9 @@
     .header a:active {
         color: #0065FC;
         border-bottom: 2px solid #0065FC;
-        border-top: none;
+    }
+    .header a:hover {
+        display: none;
     }
 
     /*////////////////////          SECTION RECHERCHE       ////////////////////*/
