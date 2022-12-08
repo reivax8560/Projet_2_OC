@@ -3,73 +3,59 @@
     margin: 0;
     padding: 0;
 }
-
 body {
     font-family: 'Raleway', sans-serif;
     color: black;
     font-size: 15px;
     padding: 0 50px;
     max-width: 1400px;
-/*    min-width: 100%;  */
     margin: 0 auto;
 }
-
 h1 {
     font-weight: 900;
     font-size: 22px;
 }
-
 h2 {
     font-weight: 900;
     font-size: 22px;
 }
-
 .bold {
     font-weight: bold;
 }
-
 /*////////////////////////   HEADER  ///////////////////////*/
 .header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-
 .header img {
     height: 20px;
     margin-top: 40px;
 }
-
 .header ul {
     display: flex;
     flex-direction: row;
 }
-
 .header li {
     list-style: none;
 }
-
 .header a {
     display: block;
     padding: 50px 30px 0 30px;
     text-decoration: none;
     font-weight: 500;
 }
-
 .header a:hover {
     color: #0065FC;
     border-top: 2px solid #0065FC;
 }
-
 /*////////////////////   SECTION RECHERCHE  ////////////////////*/
 .section_recherche {
     margin: 50px 0 25px 0;
 }
-
 .section_recherche p {
     margin: 10px 0;
 }
-
 .section_recherche form {
     display: flex;
     flex-direction: row;
@@ -77,7 +63,6 @@ h2 {
     margin: 20px 0;
     gap: 0px;
 }
-
 .div_icone_loc {
     background-color: #F2F2F2;
     border-radius: 15px 0 0 15px;
@@ -86,7 +71,6 @@ h2 {
     padding: 13px;
     text-align: center;
 }
-
 .input_search {
     height: 100%;
     width: 220px;
@@ -96,7 +80,6 @@ h2 {
     font-weight: 900;
     font-family: 'Raleway';
 }
-
 .bouton_recherche {
     height: 100%;
     width: 120px;
@@ -108,23 +91,19 @@ h2 {
     font-size: 16px;
     font-family: 'Raleway';
 }
-
 .bouton_recherche i {
     display: none;
 }
-
 .div_filtres {
     display: flex;
     justify-content: flex-start;
     margin: 30px 0;
 }
-
 .div_filtres p {
     font-weight: 900;
     margin: auto 10px;
     font-size: 16px;
 }
-
 .div_filtres button {
     font-weight: 900;
     background-color: white;
@@ -137,23 +116,19 @@ h2 {
     font-size: 15px;
     margin: 0 15px;
 }
-
 .div_filtres button:hover {
     background-color: #DEEBFF;
 }
-
 .div_filtres button i {
     color: #0065FC;
     margin-right: 10px;
 }
-
 .div_info {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin: 25px 0;
 }
-
 .div_info div {
     display: flex;
     width: 20px;
@@ -163,18 +138,15 @@ h2 {
     color: #0065FC;
     margin: 0 10px;
 }
-
 .div_info div i {
     margin: auto;
 }
-
 /*//////////////////   DIV HEBERGEMENT & POPULAIRE  //////////////////*/
 .hebergement_et_populaire {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-
 /*////////////////////   SECTION HEBERGEMENTS  ////////////////////*/
 .section_hebergements {
     background-color: #F2F2F2;
@@ -183,83 +155,64 @@ h2 {
     width: 69%;
     box-sizing: border-box;
 }
-
 .section_hebergements h2 {
     margin-left: 10px;
 }
-
-/* je n'arrive pas à créer de marge verticale entre les cartes hébergements en utilisant gap sur la carte. 
-j'ai tester align-content sur la div des cartes, ça ne marche pas non plus
-il n'y a qu'avec le margin 1% que ça fonctionne mais la marge n'est pas identique à la maquette */
-
 .div_cartes {
     margin: 10px 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-/*    align-content: space-between;     (ne fonctionne pas) */
 }
-
 .carte_hebergement {
     border-radius: 20px;
     border: 4px solid white;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     width: 27%;
-/*    gap: 5%;  (ne fonctionne pas) */
     margin: 2%;
 }
-
 .carte_hebergement a {
     text-decoration: none;
     color: black;
     display: flex;
     flex-direction: column;
 }
-
 .carte_hebergement a img {
     border-radius: 20px 20px 0 0;
     object-fit: cover;
     width: 100%;
     height: 110px;
 }
-
 .carte_texte {
     background-color: white;
     padding: 5px 10px;
     border-radius: 0 0 15px 15px;
     min-height: 50px;
 }
-
 .carte_texte p {
     font-size: 13px;
     margin: 3px 0;
 }
-
 .div_etoiles {
     display: flex;
     flex-direction: row;
 }
-
 .div_etoiles_bleues {
     color: #0065FC;
     display: flex;
     flex-direction: row;
 }
-
 .div_etoiles_bleues i {
     margin: auto;
 }
-
 .div_etoile_grise {
     color: #EFEBEB;
 }
-
 .afficher_plus {
     margin: 10px 0 10px 10px;
     font-size: 16px;
     font-weight: 900;
 }
-
 /*////////////////////   ASIDE POPULAIRE  ////////////////////*/
 .aside_populaires {
     background-color: #F2F2F2;
@@ -268,17 +221,14 @@ il n'y a qu'avec le margin 1% que ça fonctionne mais la marge n'est pas identiq
     width: 29%;
     box-sizing: border-box;
 }
-
 .aside_titre {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .aside_titre i {
     color: #0065FC;
 }
-
 .div_vignettes {
     display: flex;
     flex-direction: column;
@@ -286,7 +236,6 @@ il n'y a qu'avec le margin 1% que ça fonctionne mais la marge n'est pas identiq
     justify-content: space-evenly;
     height: 100%;
 }
-
 .vignette_populaire {
     border-radius: 20px;
     border: 4px solid white;
@@ -295,7 +244,6 @@ il n'y a qu'avec le margin 1% que ça fonctionne mais la marge n'est pas identiq
     width: 100%;
     margin: 3%;
 }
-
 .vignette_populaire a {
     display: flex;
     text-decoration: none;
@@ -303,7 +251,6 @@ il n'y a qu'avec le margin 1% que ça fonctionne mais la marge n'est pas identiq
     height: 100%;
     width: 100%;
 }
-
 .vignette_populaire a img {
     border-radius: 20px 0 0 20px;
     width: 40%;
@@ -311,81 +258,67 @@ il n'y a qu'avec le margin 1% que ça fonctionne mais la marge n'est pas identiq
     max-height: 140px;
     object-fit: cover;
 }
-
 .vignette_texte {
     background-color: white;
     padding: 10px 15px;
     border-radius: 0 15px 15px 0;
     width: 60%;
 }
-
 .vignette_texte p {
     font-size: 13px;
     margin: 5px 0;
 }
-
 .vignette_etoiles {
     display: flex;
     flex-direction: row;
     position: absolute;
     bottom: 5px;
 }
-
 .vignette_etoiles_bleues {
     color: #0065FC;
     display: flex;
     flex-direction: row;
 }
-
 .vignette_etoiles_bleues i {
     margin: auto;
 }
-
 .vignette_etoile_grise {
     color: #EFEBEB;
 }
-
 /*////////////////////   SECTION ACTIVITES  ////////////////////*/
 .activites {
     margin: 50px auto;
 }
-
 .activites h2 {
     margin-bottom: 30px;
 }
-
 .div_vignettes_activites {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-
 .vignette_activite {
     border-radius: 20px;
     border: 2px solid #EFEBEB;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     width: 23%;
 }
-
 .vignette_activite a {
     text-decoration: none;
     color: black;
 }
-
 .vignette_activite a img {
     border-radius: 20px 20px 0 0;
     object-fit: cover;
     width: 100%;
     height: 350px;
 }
-
 .vignette_activite a h4 {
     background-color: white;
     padding: 15px 0 0 15px;   
     border-radius: 0 0 20px 20px;
     height: 30px;
 }
-
 /*////////////////////   FOOTER  ////////////////////*/
 .footer {
     background-color: #EFEBEB;
@@ -393,20 +326,16 @@ il n'y a qu'avec le margin 1% que ça fonctionne mais la marge n'est pas identiq
     justify-content: space-between;
     padding: 40px 60px;
 }
-
 .div_footer {
     min-width: 350px;
 }
-
 .div_footer ul {
     margin-top: 20px;
 }
-
 .div_footer li {
     list-style: none;
     margin: 10px 0;
 }
-
 .div_footer li a {
     text-decoration: none;
     color: black;

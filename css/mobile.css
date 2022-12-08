@@ -1,11 +1,9 @@
 @media screen and (max-width: 768px) {
     /*/////////////////////      GENERAL     /////////////////////*/
-
     * {
         margin: 0;
         padding: 0;
     }
-
     body {
         font-family: 'Raleway', sans-serif;
         color: black;
@@ -13,62 +11,52 @@
         max-width: 768px;
         padding: 0;
     }
-
     h1 {
         font-weight: 900;
         font-size: 22px;
     }
-
     h2 {
         font-weight: 900;
         font-size: 22px;
     }
-
     .bold {
         font-weight: bold;
     }
-
     /*/////////////////////      HEADER      ////////////////////*/
     .header {
         display: flex;
         flex-direction: column;
     }
-
     .header img {
         height: 20px;
         margin: 20px auto;
     }
-
     .header nav {
         margin: 10px auto 0 auto;
     }
-
     .header ul {
         display: flex;
         flex-direction: row;
     }
-
     .header li {
         list-style: none;
         margin: 0 2px;
     }
-
     .header a {
-        text-decoration: none;
+        text-decoration: none;  
         display: block;
         padding: 20px;
         font-weight: 450;
-        border-bottom: 2px solid #F2F2F2;
+        border-bottom: 2px solid #F2F2F2; 
         width: 140px;
         text-align: center;
         color: black;
     }
-
-    .header a:active {
+    .header a:visited {
         color: #0065FC;
         border-bottom: 2px solid #0065FC;
+        border-top: 2px solid white;
     }
-
     /*//////////////       SECTION RECHERCHE      //////////////*/
     .section_recherche {
         display: flex;
@@ -76,11 +64,9 @@
         padding: 30px 20px;
         margin: 0;
     }
-
     .section_recherche p {
         margin: 20px 0;
     }
-
     .section_recherche form {
         height: 55px;
         margin: 10px auto;
@@ -88,7 +74,6 @@
         display: flex;
         justify-content: center;
     }
-
     .div_icone_loc {
         background-color: #F2F2F2;
         width: 17%;
@@ -99,7 +84,6 @@
         font-size: 20px;
         padding: 0;
     }
-
     .input_search {
         width: 65%;
         padding-left: 15px;
@@ -108,11 +92,9 @@
         font-family: 'raleway';
         font-weight: 900;
     }
-
     .bouton_recherche span {
         display: none;
     }
-
     .bouton_recherche {
         background-color: #0065FC;
         color: white;
@@ -121,24 +103,20 @@
         border: none;
         font-size: 16px;
     }
-
     .bouton_recherche i {
         display: block;
     }
-
     .div_filtres {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
         margin: 0;
     }
-
     .div_filtres p {
         font-weight: 900;
         font-size: 20px;
         width: 100%;
     }
-
     .div_filtres button {
         font-weight: bold;
         background-color: white;
@@ -152,23 +130,19 @@
         font-size: 11px;
         padding: 0 5px;
     }
-
     .div_filtres button:visited {
         filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     }
-
     .div_filtres button i {
         color: #0065FC;
         margin: 0 5px 0 10px;
         font-size: 20px;
     }
-
     .div_info {
         display: flex;
         justify-content: flex-start;
         margin: 30px 0 10px 0;
     }
-
     .div_info div {
         display: flex;
         width: 30px;
@@ -179,22 +153,18 @@
         align-self: flex-start;
         margin: 0;
     }
-
     .div_info div i {
         margin: auto;
     }
-
     .div_info p {
         font-size: 16px;
         margin: 3px 0 3px 8px;
     }
-
     /*////////////    DIV HEBERGEMENT & POPULAIRE     ///////////*/
     .hebergement_et_populaire {
         display: flex;
         flex-direction: column-reverse;
     }
-
     /*/////////////////      ASIDE POPULAIRE     ////////////////*/
     .aside_populaires {
         display: flex;
@@ -204,7 +174,6 @@
         border-radius: 0px;
         width: 100%;
     }
-
     .aside_titre {
         display: flex;
         justify-content: space-between;
@@ -212,16 +181,13 @@
         align-items: center;
         width: 100%;
     }
-
     .aside_titre i {
         color: #0065FC;
     }
-
     .div_vignettes {
         display: flex;
         flex-direction: column;
     }
-
     .vignette_populaire {
         width: 100%;
         height: 140px;
@@ -231,21 +197,18 @@
         filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
         box-sizing: border-box;
     }
-
     .vignette_populaire a {
         display: flex;
         text-decoration: none;
         color: black;
         height: 100%;
     }
-
     .vignette_populaire a img {
         border-radius: 15px 0 0 15px;
         width: 40%;
         height: 100%;
         object-fit: cover;
     }
-
     .vignette_texte {
         background-color: white;
         padding: 10px 17px;
@@ -254,39 +217,31 @@
         height: 100%;
         box-sizing: border-box;
     }
-
     .vignette_texte p {
         font-size: 13px;
         margin: 10px 0;
     }
-
     .vignette_etoiles {
         display: flex;
         flex-direction: row;
     }
-
     .vignette_etoiles_bleues {
         color: #0065FC;
         display: flex;
         flex-direction: row;
     }
-
     .vignette_etoiles_bleues i {
         margin: auto;
     }
-
     .vignette_etoile_grise {
         color: #EFEBEB;
     }
-
-
     /*///////////////      SECTION HEBERGEMENTS    ///////////////*/
     .section_hebergements {
         background-color: white;
         padding: 30px 20px 40px 20px;
         width: 100%;
     }
-
     .section_hebergements h2 {
         margin-left: 0;
     }
@@ -294,7 +249,6 @@
         display: flex;
         flex-direction: column;
     }
-
     .carte_hebergement {
         width: 100%;
         height: 200px;
@@ -304,21 +258,18 @@
         filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
         box-sizing: border-box;
     }
-
     .carte_hebergement a {
         display: flex;
         flex-direction: column;
         text-decoration: none;
         color: black;
     }
-
     .carte_hebergement a img {
         width: 100%;
         height: 120px;
         border-radius: 15px 15px 0 0;
         object-fit: cover;
     }
-
     .carte_texte {
         background-color: white;
         padding: 10px 10px;
@@ -327,35 +278,28 @@
         width: 100%;
         box-sizing: border-box;
     }
-
     .carte_texte p {
         font-size: 14px;
         margin: 3px 0;
     }
-
     .div_etoiles {
         display: flex;
         flex-direction: row;
     }
-
     .div_etoiles_bleues {
         color: #0065FC;
         display: flex;
         flex-direction: row;
     }
-
     .div_etoiles_bleues i {
         margin: auto;
     }
-
     .div_etoile_grise {
         color: #EFEBEB;
     }
-
     .afficher_plus {
         display: none;
     }
-
     /*////////////////////      SECTION ACTIVITES   ////////////////////*/
     .activites {
         padding: 50px 20px 60px 20px;
@@ -363,19 +307,16 @@
         margin: 0;
         box-sizing: border-box;
     }
-
     .activites h2 {
         width: 150px;
         margin: 0;
     }
-
     .div_vignettes_activites {
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
         width: 100%;
     }
-
     .vignette_activite {
         width: 100%;
         height: 190px;
@@ -384,21 +325,18 @@
         filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
         box-sizing: border-box;
     }
-
     .vignette_activite a {
         display: flex;
         flex-direction: column;
         text-decoration: none;
         color: black;
     }
-
     .vignette_activite a img {
         border-radius: 20px 20px 0 0;
         width: 100%;
         height: 140px;
         object-fit: cover;
     }
-
     .vignette_activite a h4 {
         background-color: white;
         padding: 14px 17px;
@@ -407,7 +345,6 @@
         width: 100%;
         box-sizing: border-box;
     }
-
     /*////////////////////      FOOTER      ////////////////////*/
     .footer {
         background-color: #EFEBEB;
@@ -415,15 +352,12 @@
         flex-direction: column;
         padding: 40px 30px 10px 30px;
     }
-
     .div_footer {
         margin-bottom: 30px;
     }
-
     .div_footer li {
         list-style: none;
     }
-
     .div_footer li a {
         text-decoration: none;
         color: black;
