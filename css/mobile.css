@@ -64,9 +64,9 @@
         text-align: center;
         color: black;
     }
-    .header a:active {
+    .header a:visited {
         color: #0065FC;
-        border-bottom: 2px solid #0065FC;
+        border-bottom: 2px solid white;
         border-top: 2px solid white;
     }
     /*//////////////       SECTION RECHERCHE      //////////////*/
